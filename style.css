@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,500,900i&display=swap');
 
+
 body {
     font-family: "Rubik", Arial;
     font-size: 18px;
@@ -95,20 +96,21 @@ section.hero h2, section.hero p {
 section.content {
     margin: 48px;
     display: flex;
-    flex-direction: row;
-}
-
-section.content div.content {
-    /* do not grow, do not shrink, be 400 at all points */
+  }
+  
+  section.content div.content {
     flex: 0 0 400px;
     margin: 0 0 0 48px;
-}
-
-section.content:nth-child(odd) {
+  }
+  
+  section.content:nth-child(odd) {
     flex-direction: row-reverse;
-}
-
-section.content:nth-child(odd) div.content {
+  }
+  
+  section.content:nth-child(odd) div.content {
     margin: 0 48px 0 0;
-}
+  }
+
+
+
 
