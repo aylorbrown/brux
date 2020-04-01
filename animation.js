@@ -22,7 +22,6 @@ const fadeIn = function () {
             tag.style.opacity = 0 
             tag.style.animation = ""
         }
-
     })
 }
 
