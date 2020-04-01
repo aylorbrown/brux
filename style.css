@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,500,900i&display=swap');
 
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
 
 body {
     font-family: "Rubik", Arial;
