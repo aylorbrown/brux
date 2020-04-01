@@ -1,6 +1,22 @@
 const irisLeft = document.querySelector("div.iris-left")
 const irisRight = document.querySelector("div.iris-right")
 
+// set an interval 
+let interval = null
+
+// move the eyes every 3 seconds 
+const startInterval = function () {
+    clearInterval(interval)
+    interval = setInterval(() => {
+        // random on the entire width of page 
+        const x = Math.random() * window.innerWidth
+        const y = Math.random() * window.innerWidth
+
+        moveEye(irisLeft, x, y)
+        moveEye(irisRight, x, y)
+    }, 3000)
+}
+
 // function that moves each iris based on mouse position
 // which eye, where is the mouse x & y 
 const moveEye = function (tag, mouseX, mouseY) {
@@ -32,7 +48,10 @@ const moveEye = function (tag, mouseX, mouseY) {
     eyeTag.style.top = cappedY + "px"
 }
 
+startInterval()
+
 document.addEventListener("mousemove", function (event) {
+    startInterval()
     moveEye(irisLeft, event.pageX, event.pageY)
     moveEye(irisRight, event.pageX, event.pageY)
 })
