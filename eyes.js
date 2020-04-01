@@ -11,7 +11,7 @@ const moveEye = function (tag, mouseX, mouseY) {
     const eyeMidY = tag.getBoundingClientRect().top
     // find the difference between the eye and the mouse 
     const diffX = mouseX - eyeMidX
-    const diffY = mouseY - eyeMidY
+    const diffY = mouseY - eyeMidY - window.pageYOffset
 
     // pythagareous theroem 
     const diff = Math.sqrt(diffX * diffX + diffY * diffY)
