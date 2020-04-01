@@ -7,7 +7,14 @@ animatedTags.forEach(tag => {
 
 // fade in 
 const fadeIn = function () {  
-    console.log("fade.in")
+    // look through all animatedTags and see with the getBoundingClientRect
+    // if its in the window 
+    animatedTags.forEach(tag => {
+        const tagTop = tag.getBoundingClientRect().top
+        const tagBottom = tag.getBoundingClientRect().bottom
+
+
+    })
 }
 
 // on load, run fadeIn
