@@ -122,6 +122,10 @@ section.content {
     margin: 0 48px 0 0;
   }
 
+  h2, h3, p, section.img, a.button {
+      opacity: 0;
+  }
+
 
 
 
